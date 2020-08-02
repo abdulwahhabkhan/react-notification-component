@@ -1,6 +1,6 @@
 {
   "name": "react-notification-modal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "http://abdulwahhabkhan.github.io/react-notification-component",
   "description": "react notification component with bootstrap modal",
   "main": "index.js",
@@ -36,5 +36,7 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
