@@ -1,7 +1,7 @@
 {
   "name": "react-notification-modal",
   "version": "1.0.1",
-  "homepage": "http://abdulwahhabkhan.github.io/react-notification-component",
+  "homepage": "http://abdulwahhabkhan.github.io/react-notification-modal",
   "description": "react notification component with bootstrap modal",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abdulwahhabkhan/react-notification-component.git"
+    "url": "git+https://github.com/abdulwahhabkhan/react-notification-modal.git"
   },
   "keywords": [
     "react",
@@ -22,7 +22,7 @@
   "author": "Abdul Wahhab Khan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/abdulwahhabkhan/react-notification-component/issues"
+    "url": "https://github.com/abdulwahhabkhan/react-notification-modal/issues"
   },
   "dependencies": {},
   "peerDependencies": {
