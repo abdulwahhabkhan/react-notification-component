@@ -1,6 +1,6 @@
 # react-notification-modal
 
-A delightful, easy to use and highly configurable component to help you notify your users out of the box. Specially for the server side exceptions e.g. 400, 500 errors
+A delightful, easy to use and highly configurable component to help you notify your users out of the box. Specially for the server side exceptions e.g. 400, 500 and login modal if ajax request return errors.
 
 ## Dependencies
 * React Bootstrap Modal
@@ -59,7 +59,7 @@ Then call `addNotification` and watch the magic happens
 ```jsx
 store.addNotification({
   title: "Exception: 500!",
-  message: "abdulwhhabhan@react-notification-modal",
+  message: "abdulwhhabkhan@react-notification-modal",
   type: "success",
 });
 ```
