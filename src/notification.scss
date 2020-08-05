@@ -1,0 +1,58 @@
+$color-red-deep:#c0392b;
+$color-success:#62cb31;
+$color-warning:#ffb606;
+$color-info:#3498db;
+.modal {
+  .modal-content {
+    border: none;
+    box-shadow: 0 0 1px rgba(0,0,0,0.1),0 2px 4px rgba(0,0,0,0.2);
+    border-radius: 0px;
+    .status-line{
+      height: 6px;
+    }
+    .modal-header{
+      background: #f7f9fa;
+    }
+  }
+}
+
+.modal.exception {
+  .modal-content {
+    .status-line{
+      background: $color-red-deep;
+    }
+    .modal-header{
+      color:$color-red-deep;
+    }
+  }
+}
+.modal.success {
+  .modal-content {
+    .status-line{
+      background: $color-success;
+    }
+    .modal-header{
+      color:$color-success;
+    }
+  }
+}
+.modal.warning {
+  .modal-content {
+    .status-line{
+      background: $color-warning;
+    }
+    .modal-header{
+      color:$color-warning;
+    }
+  }
+}
+.modal.info {
+  .modal-content {
+    .status-line{
+      background: $color-info;
+    }
+    .modal-header{
+      color:$color-info;
+    }
+  }
+}

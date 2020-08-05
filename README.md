@@ -1,37 +1,29 @@
 # react-notification-modal
 
-A delightful, easy to use and highly configurable component to help you notify your users out of the box. Specially for the server side exceptions e.g. 400, 500 and login modal if ajax request return errors.
 
-## Dependencies
-* React Bootstrap Modal
+[![NPM](https://img.shields.io/npm/v/react-notification-modal.svg)](https://www.npmjs.com/package/react-notification-modal) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-## Getting started
-```
-npm install react-notification-modal
-```
+A delightful, easy to use and highly configurable component to help you notify your users out of the box. Specially for the server side exceptions, messages and Login Modal.
 
-### Development
+## Install
 
-First build the library
-```
-npm run build:library:dev
-```
-then run the webpack server to see the app running
-```
-npm run start
+```bash
+npm install --save react-notification-modal
 ```
 
 ## Usage
 
-###
+```jsx
+import React, { Component } from 'react'
 
-Import <code>react-notification-modal</code>
-```js
-import ReactNotification from 'react-notification-modal'
-```
-Import the <code>CSS</code> theme
-```js
-import 'react-notification-modal/dist/theme.css'
+import Notifiction from 'react-notification-modal'
+import 'react-notification-modal/notification.scss'
+
+class Example extends Component {
+  render() {
+    return <Notifiction />
+  }
+}
 ```
 
 ##### SASS
@@ -58,8 +50,14 @@ Then call `addNotification` and watch the magic happens
 
 ```jsx
 store.addNotification({
-  title: "Exception: 500!",
+  title: "Exception!",
+  status: 500,
   message: "abdulwhhabkhan@react-notification-modal",
   type: "success",
 });
 ```
+
+
+## License
+
+MIT © [abdulwahhabkhan](https://github.com/abdulwahhabkhan)

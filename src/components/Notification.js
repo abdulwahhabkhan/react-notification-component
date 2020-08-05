@@ -24,17 +24,29 @@ class Notification extends Component {
 
     renderNotification = ()=>{
         const notification = this.state.notification;
+        const exception = notification && notification.exception ? (
+          <pre>
+              { notification.exception }
+          </pre>
+        ) : null
+
+        const info = notification && notification.info ? (
+          <div>
+            { notification.info }
+          </div>
+        ) : null
+        const type = notification && notification.type || 'info'
+
         if(notification){
             return(
-                <Modal size={'xl'} show={this.state.show} centered onHide={this.remove} className={'notification'} backdrop={'static'} >
+                <Modal size={this.state.notification.size || 'lg'} show={this.state.show} centered onHide={this.remove} className={'notification '+type} backdrop={this.props.backdrop} >
                     <div className="status-line"></div>
                     <Modal.Header closeButton>
                         <Modal.Title>{notification.status}: {notification.message}</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <pre>
-                            {notification.info}
-                        </pre>
+                      {exception}
+                      {info}
                     </Modal.Body>
                 </Modal>
             )
