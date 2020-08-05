@@ -17,7 +17,7 @@ npm install --save react-notification-modal
 import React, { Component } from 'react'
 
 import Notifiction from 'react-notification-modal'
-import 'react-notification-modal/notification.scss'
+import 'react-notification-modal/src/notification.scss'
 
 class Example extends Component {
   render() {
@@ -52,7 +52,8 @@ Then call `addNotification` and watch the magic happens
 store.addNotification({
   title: "Exception!",
   status: 500,
-  message: "abdulwhhabkhan@react-notification-modal",
+  exception: "abdulwhhabkhan@react-notification-modal",
+  //info: <Login />
   type: "success",
 });
 ```
