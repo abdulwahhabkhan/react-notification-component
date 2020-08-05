@@ -1,6 +1,6 @@
 {
   "name": "react-notification-modal",
-  "version": "2.0.0",
+  "version": "2.0.4",
   "homepage": "https://abdulwahhabkhan.github.io/react-notification-modal",
   "description": "react notification component with bootstrap modal",
   "author": "Abdul Wahhab Khan",
@@ -27,8 +27,8 @@
     "node": ">=10"
   },
   "scripts": {
-    "build": "microbundle-crl --no-compress --format modern,cjs",
-    "start": "microbundle-crl watch --no-compress --format modern,cjs",
+    "build": "microbundle-crl --css-modules false --no-compress --format modern,cjs",
+    "start": "microbundle-crl --css-modules false watch --no-compress --format modern,cjs",
     "prepare": "run-s build",
     "test": "run-s test:unit test:lint test:build",
     "test:build": "run-s build",

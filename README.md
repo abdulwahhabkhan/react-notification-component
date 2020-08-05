@@ -17,7 +17,7 @@ npm install --save react-notification-modal
 import React, { Component } from 'react'
 
 import Notifiction from 'react-notification-modal'
-import 'react-notification-modal/src/notification.scss'
+import 'react-notification-modal/dist/index.css'
 
 class Example extends Component {
   render() {
@@ -27,7 +27,7 @@ class Example extends Component {
 ```
 
 ##### SASS
-<code>SASS</code> files are located in `react-notifications-modal/dist/scss`
+<code>SASS</code> files are located in `react-notifications-modal/dist`
 
 Render <code>react-notification-modal</code> at the top of your application so that it does not conflict with other absolutely positioned DOM elements.
 ```jsx
